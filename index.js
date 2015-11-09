@@ -14,7 +14,7 @@ app.configure(function() {
 	app.use(express.methodOverride());
 });
 // Cargamos los endpoints
-require('./app/routes.js')(app);
+require(__dirname +'./app/routes.js')(app);
 
 // Cogemos el puerto para escuchar
 app.listen(port);
